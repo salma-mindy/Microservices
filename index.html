@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'El Messiri', serif;
+            font-size: 23px;
+        }
+        
+        .leaad {
+            font-family: 'Marck Script', cursive;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            background-image: url("https://nsa40.casimages.com/img/2020/10/01/201001052855119328.png");
+            height: 70vh;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .bg-text {
+            background-color: #000;
+            /* Fallback color */
+            background-color: rgba(10, 7, 7, 0.671);
+            /* Black w/opacity/see-through */
+            color: #fff;
+            font-weight: bold;
+            font-size: 40px !important;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        p.lead {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .jumbotron {
+            color: rgb(8, 8, 8);
+            background-color: #aca59e5b !important;
+        }
+        
+        blockquote {
+            background: #f9f9f9;
+            border-left: 10px solid #318ce7;
+            color: rgb(124, 122, 122);
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D""\2018""\2019";
+        }
+        
+        blockquote:before {
+            color: #000;
+            content: open-quote;
+            font-size: 2em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+        
+        blockquote p {
+            display: inline;
+        }
+        
+        .bb {
+            color: #318ce7;
+            cursor: pointer;
+            font-size: 15px !important;
+        }
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+    <title>Les Microservices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1 style="font-size:30px">
+            Découvrons les Microservices
+        </h1>
+    </div>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-1 mb-4"></div>
+
+            <div class="col-md-10">
+                <p>
+                    <strong style="color: #000;">Les Microservices</strong> constituent une approche architecturale et une méthode d'organisation pour le développement logiciel; Une variante du style architectural de l'architecture orientée services (SOA)
+                    qui construit une application comme un ensemble de services faiblement couplés.
+                </p>
+                <p>
+                    A la base, une application est créée dans son ensemble. En d'autres termes, tous les éléments d'une application implantable résident dans cette seule application. L'inconvénient est que plus il est gros, plus il sera difficile d'ajouter des ressources
+                    et de résoudre rapidement les problèmes.
+                    <br>Grâce à la méthode des microservices, ces problèmes peuvent être résolus, le développement peut être amélioré et la réactivité peut être obtenue. Contrairement à cette approche traditionnelle des applications, les microservices
+                    fonctionnent en synergie tout en étant séparés.
+                    <br>En effet, les applications sont développées à l'aide de composants indépendants, qui exécutent chaque processus de l'application en tant que service. Ces services communiquent via des interfaces bien définies et utilisent des
+                    <b>API</b>. Chacun de ces composants est un microservice et chaque service remplit une fonction. ET parce qu'ils fonctionnent indépendamment, chaque service peut être mis à jour , géré ou déployé pour répondre aux exigences spécifiques
+                    des applications sans affecter le fonctionnement des autres services. L'architecture des microservices simplifie ainsi la mise à l'échelle et accélère le développement d'applications.
+                </p>
+                <p class="leaad text-center" style="color: #318ce7 !important;">
+                    Les microservices font référence à la fois à une approche architecturale et à une approche logicielle, qui consiste à diviser l'application en parties les plus simples et indépendantes les unes des autres.
+                </p>
+                <p> Un avantage avancé est que lors d'un besoin urgent de mettre à jour une ressource, seul le microservice contenant la ressource sera mis à jour. Et l'ensemble de l'application est toujours compatible avec la modification.
+                </p>
+                <blockquote>
+                    Dans une architecture microservices, une application de grande taille est réalisée sous forme de petits modules monofonctionnels (les microservices). Les blocs de construction eux-mêmes sont développés indépendamment les uns des autres et forment ensemble
+                    le produit final. <br> <br><b>Jérôme Mainaud, architecte logiciel</b> (Chez Ippon Tecnologies); donne sa définition des microservices<em>: "C'est un style d’architecture logicielle dont les différents composants sont développés sous la forme de services autonomes qui s’exécutent avec leur propre processus. Ce modèle s’oppose ainsi aux architectures monolithiques où les composants écrits sous la forme de bibliothèque, modules ou classes sont tous déployés dans le même processus."</em>
+                </blockquote>
+                <p>
+
+                    <h6>Survolons quelques avantages des microservies:
+                        <small> une agilité, une dimensions flexible, un déploiement facile, une liberté technologique, un code reutilisable...</small>
+                    </h6>
+                    <hr>
+                    <u>Quelques définitions </u>
+                    <p class="bb" data-toggle="modal" data-target="#myModal">
+                        Wikipedia:
+                    </p>
+                </p>
+
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <p class="text-center">
+                                <a href="https://fr.wikipedia.org/wiki/Interface_de_programmation">API</a>
+                                <br>
+                                <a href="https://fr.wikipedia.org/wiki/Representational_state_transfer">API Rest</a>
+                                <br>
+
+                                <a href="https://fr.wikipedia.org/wiki/Architecture_orient%C3%A9e_services">Architecture orientée services</a>
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <p>
+                    <ul>
+                        <li><b>Une architecture orientée services (SOA)</b>, est une forme d'architecture de médiation qui est un modèle d'interaction applicative qui met en œuvre des services.</li>
+                        <li><b>Une API</b>, une interface de programmation d’application ou interface de programmation applicative (souvent désignée par le terme API pour Application Programming Interface) est un ensemble normalisé de classes, de méthodes,
+                            de fonctions et de constantes qui sert de façade par laquelle un logiciel offre des services à d'autres logiciels.</li>
+                    </ul>
+                </p>
+                <hr>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h4><u>Historique</u> :</h4>
+                        <p>
+                            * <strong style="color: #000;">Microservices</strong> <br> Bien que les microservices réutilisent un grand nombre de principes largement utilisés dans les systèmes d'information d'entreprise à grande échelle, en particulier
+                            le concept d'<b>architecture orientée services (SOA)
+                            </b> , il est apparu pour la première fois au cours d'ateliers d'architecture en 2011. <br>Selon Google Trends, ce sujet est en effet évoqué depuis 2014. Parmi les pionniers, Netflix est particulièrement engagé dans la promotion
+                            de ces architectures.
+                        </p>
+                        <div>
+                            Pour plus d'informations sur les microservices, veuillez cliquer <a href="https://soat.developpez.com/tutoriels/web/conditions-utilisation-microservices/">ici</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-1 mb-4"></div>
+        </div>
+    </main>
+
+    <footer>
+        <br><br>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <img src="https://nsa40.casimages.com/img/2020/10/01/201001070443931928.jpg" class="rounded" width="120">
+            </div>
+
+            <div class="col-md-4 text-center mt-3">
+                <h3>Anoa Sheila Melissa</h3>
+                <h4> Stagiaire développeuse web et mobile</h4>
+                <a href="https://www.linkedin.com/in/anoa-sheila-melissa-aka-96a859162">
+                    <img src="https://nsm09.casimages.com/img/2020/10/01/20100107261325464517060982.png" width="40" alt="">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100007165728234">
+                    <img src=" https://nsm09.casimages.com/img/2020/10/01/20100107213725464517060979.png" width="36">
+                </a>
+                <a href="#"><img src="https://nsm09.casimages.com/img/2020/10/01/20100107432125464517060996.png" width="35" alt=""></a>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>
